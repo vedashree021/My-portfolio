@@ -1,0 +1,101 @@
+body{
+font-family:Arial;
+margin:0;
+background:linear-gradient(120deg,#667eea,#764ba2);
+color:white;
+text-align:center;
+}
+
+/* Smooth scrolling */
+html{
+scroll-behavior:smooth;
+}
+
+/* Navbar */
+nav{
+background:rgba(0,0,0,0.4);
+padding:15px;
+position:sticky;
+top:0;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ffd700;
+}
+
+/* Hero section */
+.hero{
+padding:100px 20px;
+}
+
+/* Button */
+button{
+padding:10px 20px;
+border:none;
+border-radius:20px;
+background:white;
+color:#764ba2;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#ffd700;
+color:black;
+}
+
+/* Sections */
+section{
+padding:60px;
+}
+
+/* Project container */
+.projects{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+/* Cards */
+.card{
+background:white;
+color:black;
+padding:20px;
+margin:10px;
+border-radius:10px;
+width:200px;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+/* Contact form */
+form{
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+input, textarea{
+width:250px;
+margin:10px;
+padding:10px;
+border:none;
+border-radius:5px;
+}
+
+textarea{
+height:100px;
+}
