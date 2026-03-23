@@ -11,11 +11,9 @@ app.use(bodyParser.json());
 app.use(express.static("public"));
 
 const pool = new Pool({
-user: "postgres",
-host: "localhost",
-database: "portfolio",
-password: "1234",
-port: 5432
+   connectionString:
+process.env.postgresql://postgres.otpwjkxmmwedofvdxkgh:RlhGgmJBYnLM9Gj7@aws-1-ap-south-1.pooler.supabase.com:6543/postgres   
+ssl:{rejectUnauthorized: false}
 });
 
 app.post("/contact", async (req, res) => {
